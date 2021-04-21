@@ -1,6 +1,5 @@
-# mysql-files
+# MySQL DB
 
-## MySQL DB
 ### Normalized Schema
 #### Summary:
 The schema is designed to normalize the CSV data into one that fits a relational database structure. The units and devices are broken down into different tables with each entry having an ID that refers to corresponding tables. This allows for a more meaningful reading and data querying.
