@@ -5,6 +5,9 @@
 #### Summary:
 The schema is designed to normalize the CSV data into one that fits a relational database structure. The units and devices are broken down into different tables with each entry having an ID that refers to corresponding tables. This allows for a more meaningful reading and data querying.
 #### Schema:  
+
+![](normalized-db-schema.png)
+
 The schema is broken down into multiple tables. 
 - **SEB**: Contains the unique id for each entry of data for each AHU and common table. These ids is the master labels and will be referenced by other tables.   
 - **Common**: Holds data points that are unique to each time entry and do not belong to any specific AHU or VAVs. The points contained in this table are external.  temperature, is_summer, is_weekday, is_working_hours, cooling_consumption, heating_consumption, and timestamp. Has a foreign key that references the SEB table. 
