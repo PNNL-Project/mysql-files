@@ -21,7 +21,7 @@ The normalized table is primarily used in the hunting service. As each VAV has i
 #### Summary:
 *Dump file: SEB_processed_date_time_shifted-2021_04_21-dump*\
 *Table name: seb_processed_data_time_shifted*\
-The denormalized table is one table where each row represents all data points for a particular time stamp. The format is the exact same as the processed CSV. As the provided data from the website has historic data, the time stamp has also been shifted to simulate “live” data inflow for the duration of this project. 
+The denormalized table is one table where each row represents all data points for a particular time stamp. The format is the exact same as the processed CSV. The software used to import the table was called [TablePlus](https://docs.tableplus.com/). As the provided data from the website has historic data, the time stamp has also been shifted to simulate “live” data inflow for the duration of this project. 
 #### Schema:
 The table structure is the same as the CSV file of the processed data. Each column of the table corresponds to the same column in the CSV file. The primary key for the table is the IDs. The IDs for each row of data are assigned through auto incrementation. The datetime column has an additional layer of indexing, through MySQL MUL key attribute. This allows for faster querying.
 #### Relationship With Other Services:
